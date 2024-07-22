@@ -32,18 +32,19 @@ section{
     margin-right: -12px;
 }
 
-
+.d-flex{
+    display: flex;
+}
  
  /*-------------------column----------------------*/
 
 .col-6 {
     width: 50%;
     padding-left:12px;
-    padding-right:12px;
+
 }
 
 /*---------card detail---------*/
-
 .card h1{
     color: #fff;
    padding-top: 60px;
@@ -57,7 +58,7 @@ text-align: left;
 .card .para1{
     margin-top: 10px;
     font-family: Poppins;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 32.4px;
     text-align: left;
@@ -75,6 +76,9 @@ text-align: left;
     background-color: rgb(33, 32, 32);
    
     
+}
+.mr-30{
+    margin-right: 30px;
 }
 .box:hover{
     background: #0C0B0B;   
@@ -120,21 +124,33 @@ text-align: left;
 }
 .para2{
     font-family: Poppins;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
     line-height: 32.4px;
     text-align: left;
     color: white;
     opacity: 70%;
 }
-.image{
-   position: absolute;
-   width: 50%;
-right: 0px;
-top: 130px;
 
-}
+
 img{
-    width: 100%;
-   
+    width: 100%;  
 }
+.position{
+    position: absolute;
+    right: 0;
+    margin-top: 100px;
+}
+@media (max-width:992px) {
+   
+  .col-6{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .position{
+    position: unset;
+  }
+ 
+}
+
